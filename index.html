@@ -1,0 +1,20 @@
+<script src="script.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Art Generator</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="rag-username" value="Your Name" placeholder="Type Your Name Here">
+        <button onclick="ragGenerate(this)" id="generate-button" class="rounded-button"> Generate </button>
+        <button onclick="ragSave()" id="save-button" style="display:none;" class="rounded-button">Save</button>
+        <button onclick="ragReset(this)" style="display:none;" id="reset-button" class="rounded-button"> Clear </button>
+        <canvas id="art-canvas" width="355" height="355">Enable JavaScript to view the content.</canvas>
+        <input type="range" min="0" max="100" value="100" class="slider" id="contrast-slider" step="0.1" onchange="sliderAdjusted(this)">
+    </div>
+</body>
+</html>
